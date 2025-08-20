@@ -348,7 +348,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mining-animation_0: -8331494315178531782
+      mining-animation_1: 1534478503320855343
+      mining-animation_2: -3782723877453080250
+      mining-animation_3: -8190977442396191246
+      mining-animation_4: -5785643121578283491
+      mining-animation_5: -6349116770641895516
+      mining-animation_6: -7694307102046635716
+      mining-animation_7: -8375972456822769030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

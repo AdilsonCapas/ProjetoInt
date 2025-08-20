@@ -648,7 +648,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      all-animations-drill only_0: -3166036699318687506
+      all-animations-drill only_1: 2542781977096686621
+      all-animations-drill only_10: -8259341730196906687
+      all-animations-drill only_11: -3533969656515889739
+      all-animations-drill only_12: -6920247401220495135
+      all-animations-drill only_13: 6092329482441609855
+      all-animations-drill only_14: 1483589595005728855
+      all-animations-drill only_15: -2265686551846165356
+      all-animations-drill only_16: -6934683612919373815
+      all-animations-drill only_17: -4288691777035082459
+      all-animations-drill only_18: 5065195002066169623
+      all-animations-drill only_19: -7722988254742775760
+      all-animations-drill only_2: 4389393227013905496
+      all-animations-drill only_3: 6310603787239869258
+      all-animations-drill only_4: -4964787387242428835
+      all-animations-drill only_5: -7789391272286986918
+      all-animations-drill only_6: 2233348501984653280
+      all-animations-drill only_7: -2232692328519086390
+      all-animations-drill only_8: -6025649170978730384
+      all-animations-drill only_9: 2782368008892953258
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

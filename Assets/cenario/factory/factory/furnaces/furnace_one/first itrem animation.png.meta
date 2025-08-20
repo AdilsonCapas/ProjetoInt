@@ -323,7 +323,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      first itrem animation_0: -8711210103708469489
+      first itrem animation_1: 5804330143912811385
+      first itrem animation_2: -2071680455826785206
+      first itrem animation_3: -431504933483230434
+      first itrem animation_4: 1771314181721756717
+      first itrem animation_5: 4023755473396870949
+      first itrem animation_6: 6291319303578411081
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

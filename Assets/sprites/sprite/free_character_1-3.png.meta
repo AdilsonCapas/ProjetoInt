@@ -147,7 +147,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -215,9 +215,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 139
-        width: 17
-        height: 19
+        y: 140
+        width: 16
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +236,8 @@ TextureImporter:
       name: free_character_1-3_1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 119
+        x: 16
+        y: 140
         width: 16
         height: 20
       alignment: 0
@@ -258,9 +258,9 @@ TextureImporter:
       name: free_character_1-3_2
       rect:
         serializedVersion: 2
-        x: 16
-        y: 139
-        width: 17
+        x: 32
+        y: 140
+        width: 16
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -280,8 +280,8 @@ TextureImporter:
       name: free_character_1-3_3
       rect:
         serializedVersion: 2
-        x: 17
-        y: 119
+        x: 48
+        y: 140
         width: 16
         height: 20
       alignment: 0
@@ -302,9 +302,9 @@ TextureImporter:
       name: free_character_1-3_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 139
-        width: 113
+        x: 64
+        y: 140
+        width: 16
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -324,8 +324,8 @@ TextureImporter:
       name: free_character_1-3_5
       rect:
         serializedVersion: 2
-        x: 33
-        y: 119
+        x: 80
+        y: 140
         width: 16
         height: 20
       alignment: 0
@@ -346,8 +346,8 @@ TextureImporter:
       name: free_character_1-3_6
       rect:
         serializedVersion: 2
-        x: 65
-        y: 119
+        x: 96
+        y: 140
         width: 16
         height: 20
       alignment: 0
@@ -368,8 +368,8 @@ TextureImporter:
       name: free_character_1-3_7
       rect:
         serializedVersion: 2
-        x: 113
-        y: 119
+        x: 112
+        y: 140
         width: 16
         height: 20
       alignment: 0
@@ -390,9 +390,9 @@ TextureImporter:
       name: free_character_1-3_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 99
-        width: 15
+        x: 128
+        y: 140
+        width: 16
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -412,8 +412,8 @@ TextureImporter:
       name: free_character_1-3_9
       rect:
         serializedVersion: 2
-        x: 15
-        y: 99
+        x: 0
+        y: 120
         width: 16
         height: 20
       alignment: 0
@@ -434,8 +434,8 @@ TextureImporter:
       name: free_character_1-3_10
       rect:
         serializedVersion: 2
-        x: 31
-        y: 99
+        x: 16
+        y: 120
         width: 16
         height: 20
       alignment: 0
@@ -456,10 +456,10 @@ TextureImporter:
       name: free_character_1-3_11
       rect:
         serializedVersion: 2
-        x: 49
-        y: 119
+        x: 32
+        y: 120
         width: 16
-        height: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,8 +478,8 @@ TextureImporter:
       name: free_character_1-3_12
       rect:
         serializedVersion: 2
-        x: 63
-        y: 99
+        x: 48
+        y: 120
         width: 16
         height: 20
       alignment: 0
@@ -500,10 +500,10 @@ TextureImporter:
       name: free_character_1-3_13
       rect:
         serializedVersion: 2
-        x: 81
-        y: 119
+        x: 64
+        y: 120
         width: 16
-        height: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,10 +522,10 @@ TextureImporter:
       name: free_character_1-3_14
       rect:
         serializedVersion: 2
-        x: 97
-        y: 119
+        x: 80
+        y: 120
         width: 16
-        height: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,8 +544,8 @@ TextureImporter:
       name: free_character_1-3_15
       rect:
         serializedVersion: 2
-        x: 111
-        y: 99
+        x: 96
+        y: 120
         width: 16
         height: 20
       alignment: 0
@@ -566,10 +566,10 @@ TextureImporter:
       name: free_character_1-3_16
       rect:
         serializedVersion: 2
-        x: 129
-        y: 119
+        x: 112
+        y: 120
         width: 16
-        height: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -588,9 +588,9 @@ TextureImporter:
       name: free_character_1-3_17
       rect:
         serializedVersion: 2
-        x: 15
-        y: 79
-        width: 17
+        x: 128
+        y: 120
+        width: 16
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -610,10 +610,10 @@ TextureImporter:
       name: free_character_1-3_18
       rect:
         serializedVersion: 2
-        x: 47
-        y: 99
+        x: 0
+        y: 100
         width: 16
-        height: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -632,9 +632,9 @@ TextureImporter:
       name: free_character_1-3_19
       rect:
         serializedVersion: 2
-        x: 47
-        y: 79
-        width: 98
+        x: 16
+        y: 100
+        width: 16
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -654,10 +654,10 @@ TextureImporter:
       name: free_character_1-3_20
       rect:
         serializedVersion: 2
-        x: 79
-        y: 99
+        x: 32
+        y: 100
         width: 16
-        height: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -676,10 +676,10 @@ TextureImporter:
       name: free_character_1-3_21
       rect:
         serializedVersion: 2
-        x: 95
-        y: 99
+        x: 48
+        y: 100
         width: 16
-        height: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -698,10 +698,10 @@ TextureImporter:
       name: free_character_1-3_22
       rect:
         serializedVersion: 2
-        x: 127
-        y: 99
+        x: 64
+        y: 100
         width: 16
-        height: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -720,10 +720,10 @@ TextureImporter:
       name: free_character_1-3_23
       rect:
         serializedVersion: 2
-        x: 0
-        y: 79
+        x: 80
+        y: 100
         width: 16
-        height: 19
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -742,10 +742,10 @@ TextureImporter:
       name: free_character_1-3_24
       rect:
         serializedVersion: 2
-        x: 31
-        y: 79
-        width: 17
-        height: 19
+        x: 96
+        y: 100
+        width: 16
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -760,11 +760,253 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: free_character_1-3_25
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 100
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70842d5704e1a74a9948e98e07cce76
+      internalID: 1617084962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_character_1-3_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 100
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aeedd7a06b448d448ddf7df349d8024
+      internalID: 1785805661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_character_1-3_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d10cd0ea7910644b6e6d2e1b540764
+      internalID: -1480938466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_character_1-3_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c0dc9aa9ed16e49bf1077f3a219526
+      internalID: -164652157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_character_1-3_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ab2705a55d12448a5bd2547cdcecb0
+      internalID: 1221148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_character_1-3_30
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b821afd197bc5f44584e827375f1fe61
+      internalID: 566852456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_character_1-3_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb533a0d0a61b0244bc02681a6ce17a6
+      internalID: -773730174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_character_1-3_32
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7549026c3d5a26e43a5a3f8f4a5022ae
+      internalID: 907947803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_character_1-3_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59485c1eac2e986478ad773864a3bb45
+      internalID: 1114629502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_character_1-3_34
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb44482a4dbcee40aa025c77d4f2ab9
+      internalID: 2057365063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_character_1-3_35
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9771f07199d5c04a83f57f0b1dcf2f4
+      internalID: -1155921333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a932d9b20f2bfb041922dccbc7dd85d6
     internalID: 0
     vertices: []
     indices: 
@@ -792,7 +1034,18 @@ TextureImporter:
       free_character_1-3_22: -1434710980927190886
       free_character_1-3_23: -2243656943310185620
       free_character_1-3_24: -7927156840501715371
+      free_character_1-3_25: 1617084962
+      free_character_1-3_26: 1785805661
+      free_character_1-3_27: -1480938466
+      free_character_1-3_28: -164652157
+      free_character_1-3_29: 1221148
       free_character_1-3_3: -2409696859607842112
+      free_character_1-3_30: 566852456
+      free_character_1-3_31: -773730174
+      free_character_1-3_32: 907947803
+      free_character_1-3_33: 1114629502
+      free_character_1-3_34: 2057365063
+      free_character_1-3_35: -1155921333
       free_character_1-3_4: -4286580885663860039
       free_character_1-3_5: 1080505255070741086
       free_character_1-3_6: -4764167689198274968
