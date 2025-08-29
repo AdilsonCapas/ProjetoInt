@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -7,12 +8,15 @@ public class Player : MonoBehaviour
 
     private Vector2 movement;
     private Rigidbody2D rb;
+    private SpriteRenderer sr; // 👈 vamos usar pra flipar o sprite
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         if (animator == null)
-        animator = GetComponent<Animator>();
+            animator = GetComponent<Animator>();
+
+        sr = GetComponent<SpriteRenderer>(); // 👈 pega o SpriteRenderer
     }
 
     void Update()
@@ -26,10 +30,28 @@ public class Player : MonoBehaviour
 
         bool isWalking = movement.sqrMagnitude > 0;
         animator.SetBool("isWalking", isWalking);
+
+        // 👇 Flip no sprite para reaproveitar Walk Left como Walk Right
+        if (movement.x > 0)
+        {
+            sr.flipX = true;  // andando para direita
+        }
+        else if (movement.x < 0)
+        {
+            sr.flipX = false; // andando para esquerda (normal)
+        }
     }
 
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Lab"))
+        {
+            SceneManager.LoadScene("fase1P3");
+        }
     }
 }
