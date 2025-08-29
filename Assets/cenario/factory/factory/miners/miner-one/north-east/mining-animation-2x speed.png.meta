@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mining-animation-2x speed_0: -6842670655303396399
+      mining-animation-2x speed_1: 3778970373744483586
+      mining-animation-2x speed_2: -2596199539188381540
+      mining-animation-2x speed_3: 4763288070829888769
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

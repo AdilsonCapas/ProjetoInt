@@ -648,7 +648,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      all-animations-drill holders only_0: 4135819328492012477
+      all-animations-drill holders only_1: -3102180241559144774
+      all-animations-drill holders only_10: -6308671295879198779
+      all-animations-drill holders only_11: -7122637015631831778
+      all-animations-drill holders only_12: -570531151028054813
+      all-animations-drill holders only_13: 8835226602813186455
+      all-animations-drill holders only_14: -712922358946364944
+      all-animations-drill holders only_15: -548723493790713579
+      all-animations-drill holders only_16: -1244766139577125382
+      all-animations-drill holders only_17: 3865002519144519443
+      all-animations-drill holders only_18: -3975622717210384538
+      all-animations-drill holders only_19: -3298798494688087943
+      all-animations-drill holders only_2: -4997319052174883980
+      all-animations-drill holders only_3: -5011668292585370910
+      all-animations-drill holders only_4: 4863320222751912205
+      all-animations-drill holders only_5: -4431358544794581164
+      all-animations-drill holders only_6: -4352734105477724759
+      all-animations-drill holders only_7: 5578341544320781544
+      all-animations-drill holders only_8: 8660977178952589752
+      all-animations-drill holders only_9: 8226085345433637416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

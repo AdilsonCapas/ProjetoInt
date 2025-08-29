@@ -323,7 +323,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      steam-generator-turn-off_0: -5739792875249722406
+      steam-generator-turn-off_1: -4893116129525641907
+      steam-generator-turn-off_2: 4126130006355835157
+      steam-generator-turn-off_3: -4980127744316780749
+      steam-generator-turn-off_4: 8154048935789590257
+      steam-generator-turn-off_5: 1380393319882113783
+      steam-generator-turn-off_6: -5149518439960491282
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

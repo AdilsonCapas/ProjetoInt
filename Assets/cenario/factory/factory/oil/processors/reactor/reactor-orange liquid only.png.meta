@@ -448,7 +448,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      reactor-orange liquid only_0: 6452628331006846896
+      reactor-orange liquid only_1: 7291196983619268923
+      reactor-orange liquid only_10: -5614290018814021017
+      reactor-orange liquid only_11: -8343714868604618161
+      reactor-orange liquid only_2: -2405116197298468071
+      reactor-orange liquid only_3: 5804073401407014758
+      reactor-orange liquid only_4: -7116807642420089728
+      reactor-orange liquid only_5: 3279138545108142923
+      reactor-orange liquid only_6: -5849765952258447825
+      reactor-orange liquid only_7: 287798126499100606
+      reactor-orange liquid only_8: 8184677679257278474
+      reactor-orange liquid only_9: -5506362599633729052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

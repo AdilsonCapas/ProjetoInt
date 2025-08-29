@@ -298,7 +298,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      reactor-pink liquid_0: -2884276047879042155
+      reactor-pink liquid_1: -1807621841651783276
+      reactor-pink liquid_2: 9022949508319933099
+      reactor-pink liquid_3: 4990097702216239741
+      reactor-pink liquid_4: 7011651763509438802
+      reactor-pink liquid_5: 6197114894654294528
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

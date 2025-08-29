@@ -448,7 +448,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      reactor-blue liquid only_0: -4526589625017724088
+      reactor-blue liquid only_1: 1167422233271353206
+      reactor-blue liquid only_10: -2573943551822824264
+      reactor-blue liquid only_11: 6036153105893664591
+      reactor-blue liquid only_2: 1906240722199466846
+      reactor-blue liquid only_3: -5026704009290684884
+      reactor-blue liquid only_4: -2647476965086626967
+      reactor-blue liquid only_5: 3942199941720505217
+      reactor-blue liquid only_6: 8107089031900689812
+      reactor-blue liquid only_7: 7956465701374919745
+      reactor-blue liquid only_8: -9012423900311567570
+      reactor-blue liquid only_9: 1255235117892109345
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

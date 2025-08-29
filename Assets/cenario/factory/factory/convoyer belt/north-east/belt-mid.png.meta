@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      belt-mid_0: 8443460186887948017
+      belt-mid_1: -3047118953021306252
+      belt-mid_2: -7490048097472274634
+      belt-mid_3: 9001183620667140616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

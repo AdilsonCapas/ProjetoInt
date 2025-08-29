@@ -323,7 +323,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      trruning off animation_0: -8881806767432743558
+      trruning off animation_1: 2437957167236883972
+      trruning off animation_2: -3803571534246923336
+      trruning off animation_3: 481760589505223412
+      trruning off animation_4: 1660005096905178523
+      trruning off animation_5: 3499744299488134715
+      trruning off animation_6: 5997256971723570780
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

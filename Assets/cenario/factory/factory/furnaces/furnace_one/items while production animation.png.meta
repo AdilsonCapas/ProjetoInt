@@ -323,7 +323,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      items while production animation_0: -2742566492559022790
+      items while production animation_1: -4990138792029670383
+      items while production animation_2: 2647750137825899025
+      items while production animation_3: 517247310759754982
+      items while production animation_4: 5808976944700747319
+      items while production animation_5: 1831867892555788329
+      items while production animation_6: 5013002880387747295
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
