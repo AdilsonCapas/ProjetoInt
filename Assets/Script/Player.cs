@@ -51,7 +51,13 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Lab"))
         {
-            SceneManager.LoadScene("fase1P3");
+            SceneManager.LoadScene("Laboratorio");
         }
+
+        if (collision.gameObject.CompareTag("ct"))
+        {
+            SceneManager.LoadScene("Saladecontrole");
+        }
+
     }
 }

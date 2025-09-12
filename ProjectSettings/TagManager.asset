@@ -8,6 +8,9 @@ TagManager:
   - Portal
   - veneno
   - Lab
+  - Inimigo
+  - "Ch\xE3o"
+  - ct
   layers:
   - Default
   - TransparentFX

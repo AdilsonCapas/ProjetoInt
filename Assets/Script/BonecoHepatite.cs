@@ -11,37 +11,42 @@ public class BonecoHepatite : MonoBehaviour
     [Header("Movimento")]
     public float moveSpeed = 5f;
     public float jumpForce = 7f;
+    public float climbSpeed = 3f; // velocidade de subir com "E"
     private bool noChao = true;
+    private bool podeEscalar = false; // true quando está tocando a parede
 
-    private Vector3 escalaOriginal; // salva a escala original
+    private Vector3 escalaOriginal;
+    private Vector3 pontoInicial; // Ponto inicial da fase
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        escalaOriginal = transform.localScale; // salva a escala inicial
+        escalaOriginal = transform.localScale;
+        pontoInicial = transform.position; // Salva a posição inicial
     }
 
     void Update()
     {
         Move();
         Jump();
+        Climb();
     }
 
     void Move()
     {
-        float moveInput = Input.GetAxisRaw("Horizontal"); // A/D ou setas
+        float moveInput = Input.GetAxisRaw("Horizontal");
+
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
-        // Flip do personagem mantendo escala original
+        // Virar personagem
         if (moveInput != 0)
         {
             Vector3 scale = escalaOriginal;
-            scale.x *= Mathf.Sign(moveInput); // esquerda = -1, direita = 1
+            scale.x *= Mathf.Sign(moveInput);
             transform.localScale = scale;
         }
 
-        // Anima��o de correr
         anim.SetBool("estaCorrendo", moveInput != 0);
     }
 
@@ -55,24 +60,63 @@ public class BonecoHepatite : MonoBehaviour
         }
     }
 
+    void Climb()
+    {
+        // Só sobe se estiver tocando a parede
+        if (podeEscalar && Input.GetKey(KeyCode.E))
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, climbSpeed); // sobe automaticamente
+            anim.SetBool("estaEscalando", true);
+        }
+        else
+        {
+            anim.SetBool("estaEscalando", false);
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Detecta ch�o
+        // Detecta chão
         if (collision.gameObject.CompareTag("Chao"))
         {
             noChao = true;
             anim.SetBool("estaPulando", false);
         }
 
-        // Detecta inimigo ou dano
-        if (collision.gameObject.CompareTag("Inimigo"))
+        // Detecta parede para escalada
+        if (collision.gameObject.CompareTag("Parede"))
+        {
+            podeEscalar = true;
+        }
+
+        // Detecta dano
+        if (collision.gameObject.CompareTag("veneno"))
         {
             anim.SetTrigger("tomouDano");
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // para de se mover ao sofrer dano
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+
+            Respawn(); // Volta ao início da fase
         }
+
+        // Portal
         if (collision.gameObject.CompareTag("Portal"))
         {
-           SceneManager.LoadScene("fase2 P3");
+            SceneManager.LoadScene("fase2 P3");
         }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        // Saiu da parede
+        if (collision.gameObject.CompareTag("Parede"))
+        {
+            podeEscalar = false;
+        }
+    }
+
+    void Respawn()
+    {
+        transform.position = pontoInicial;
+        rb.linearVelocity = Vector2.zero;
     }
 }

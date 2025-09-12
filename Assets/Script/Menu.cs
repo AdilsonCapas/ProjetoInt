@@ -7,6 +7,8 @@ public class Menu : MonoBehaviour
 {
     public void Nave()
     {
-        SceneManager.LoadScene("Laboratorio");
+        SceneManager.LoadScene("Corredor");
     }
+
+    
 }
