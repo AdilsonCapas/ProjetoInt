@@ -11,6 +11,8 @@ TagManager:
   - Inimigo
   - "Ch\xE3o"
   - ct
+  - door
+  - worlds
   layers:
   - Default
   - TransparentFX

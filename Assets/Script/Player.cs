@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
 public class Player : MonoBehaviour
 {
     public Animator animator;
@@ -54,10 +53,26 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("Laboratorio");
         }
 
-        if (collision.gameObject.CompareTag("ct"))
+        if (collision.gameObject.CompareTag("worlds"))
+        {
+            SceneManager.LoadScene("ecolhaMapa");
+        }
+
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("ct"))
         {
             SceneManager.LoadScene("Saladecontrole");
         }
 
+        if (other.gameObject.CompareTag("door"))
+        {
+            SceneManager.LoadScene("Corredor");
+        }
+        
     }
+
+
 }

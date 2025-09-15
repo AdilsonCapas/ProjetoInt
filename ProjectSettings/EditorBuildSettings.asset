@@ -18,23 +18,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Saladecontrole.unity
     guid: 19c4a3d61e88e1a46a6efa3b41f19309
   - enabled: 1
+    path: Assets/Scenes1/ecolhaMapa.unity
+    guid: e4e616992e0351e4ba8114c467e26e40
+  - enabled: 1
     path: Assets/Scenes/Laboratorio.unity
     guid: 2592ac058a0bda64f8122c7a97d077d5
-  - enabled: 0
-    path: Assets/Scenes/fase1P3.unity
-    guid: ae8adb842e4eefe44bf4d9cfa014c53d
-  - enabled: 0
-    path: Assets/Scenes/fase2 P3.unity
-    guid: 5170466a860123b45821c8450deda0fb
   - enabled: 1
     path: Assets/Scenes1/azul.unity
     guid: 20ad3d892ad9739469928b659a93f7da
   - enabled: 1
     path: Assets/Scenes1/Daviteama.unity
     guid: d4f642c2dae47bd46b29395b8d7fe2f1
-  - enabled: 1
-    path: Assets/Scenes1/ecolhaMapa.unity
-    guid: e4e616992e0351e4ba8114c467e26e40
   - enabled: 1
     path: Assets/Scenes1/Jamal.unity
     guid: f047b1eff0d5b5347a5028fdf4bc132e
