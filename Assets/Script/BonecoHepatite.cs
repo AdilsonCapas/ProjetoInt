@@ -18,6 +18,14 @@ public class BonecoHepatite : MonoBehaviour
     private Vector3 escalaOriginal;
     private Vector3 pontoInicial; // Ponto inicial da fase
 
+    [Header("Tiro")]
+    public GameObject projetilPrefab; // prefab da bala
+    public Transform pontoDisparo;    // posição de onde sai a bala
+    public float velocidadeProjetil = 10f;
+    public float tempoEntreTiros = 0.5f; // cooldown entre tiros
+    private float timerTiro = 0f;        // contador do cooldown
+    private bool estaAtirando = false;   // controle do estado de tiro
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,9 +36,42 @@ public class BonecoHepatite : MonoBehaviour
 
     void Update()
     {
-        Move();
-        Jump();
-        Climb();
+        // Atualiza o timer do cooldown
+        timerTiro += Time.deltaTime;
+
+        // Toggle animação de tiro com T
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            estaAtirando = !estaAtirando;
+            anim.SetBool("estaAtirando", estaAtirando);
+
+            if (estaAtirando)
+            {
+                anim.Play("Tiro", -1, 0f); // entra na animação de tiro
+            }
+            else
+            {
+                anim.Play("Idle", -1, 0f); // volta para Idle
+            }
+        }
+
+        // Disparo com botão esquerdo do mouse
+        if (estaAtirando && Input.GetMouseButtonDown(0))
+        {
+            if (timerTiro >= tempoEntreTiros)
+            {
+                Disparar();
+                timerTiro = 0f; // reseta cooldown
+            }
+        }
+
+        // Movimento, pulo e escalada só se não estiver atirando
+        if (!estaAtirando)
+        {
+            Move();
+            Jump();
+            Climb();
+        }
     }
 
     void Move()
@@ -65,13 +106,31 @@ public class BonecoHepatite : MonoBehaviour
         // Só sobe se estiver tocando a parede
         if (podeEscalar && Input.GetKey(KeyCode.E))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, climbSpeed); // sobe automaticamente
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, climbSpeed);
             anim.SetBool("estaEscalando", true);
         }
         else
         {
             anim.SetBool("estaEscalando", false);
         }
+    }
+
+    void Disparar()
+    {
+        if (projetilPrefab == null || pontoDisparo == null)
+            return;
+
+        GameObject bala = Instantiate(projetilPrefab, pontoDisparo.position, Quaternion.identity);
+
+        float direcao = Mathf.Sign(transform.localScale.x); // direção do personagem
+        Rigidbody2D rbBala = bala.GetComponent<Rigidbody2D>();
+        if (rbBala != null)
+        {
+            rbBala.linearVelocity = new Vector2(velocidadeProjetil * direcao, 0f);
+        }
+
+        // opcional: destruir bala depois de 3 segundos para limpar cena
+        Destroy(bala, 3f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -92,16 +151,29 @@ public class BonecoHepatite : MonoBehaviour
         // Detecta dano
         if (collision.gameObject.CompareTag("veneno"))
         {
-            anim.SetTrigger("tomouDano");
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-
-            Respawn(); // Volta ao início da fase
+            StartCoroutine(TomarDanoERespawn());
+        }
+        if (collision.gameObject.CompareTag("Vilao"))
+        {
+            StartCoroutine(TomarDanoERespawn());
         }
 
-        // Portal
+        // Portais
         if (collision.gameObject.CompareTag("Portal"))
         {
-            SceneManager.LoadScene("fase2 P3");
+            SceneManager.LoadScene("Daviteama");
+        }
+        if (collision.gameObject.CompareTag("Portal2"))
+        {
+            SceneManager.LoadScene("Jamal");
+        }
+        if (collision.gameObject.CompareTag("Portal3"))
+        {
+            SceneManager.LoadScene("Vermelho");
+        }
+        if (collision.gameObject.CompareTag("Portal4"))
+        {
+            SceneManager.LoadScene("Vermelho");
         }
     }
 
@@ -112,6 +184,26 @@ public class BonecoHepatite : MonoBehaviour
         {
             podeEscalar = false;
         }
+    }
+
+    IEnumerator TomarDanoERespawn()
+    {
+        anim.SetTrigger("tomouDano");
+        rb.linearVelocity = Vector2.zero;
+        rb.simulated = false;
+
+        yield return new WaitForSeconds(1f);
+
+        Respawn();
+
+        rb.simulated = true;
+
+        anim.ResetTrigger("tomouDano");
+        anim.SetBool("estaCorrendo", false);
+        anim.SetBool("estaPulando", false);
+        anim.SetBool("estaEscalando", false);
+
+        anim.Play("Idle", -1, 0f);
     }
 
     void Respawn()

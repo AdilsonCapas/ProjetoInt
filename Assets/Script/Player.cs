@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.CompareTag("worlds"))
         {
-            SceneManager.LoadScene("ecolhaMapa");
+            SceneManager.LoadScene("azul");
         }
 
     }

@@ -13,6 +13,10 @@ TagManager:
   - ct
   - door
   - worlds
+  - Portal2
+  - Portal3
+  - Vilao
+  - Portal4
   layers:
   - Default
   - TransparentFX

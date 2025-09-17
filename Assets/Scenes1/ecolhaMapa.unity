@@ -530,7 +530,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 285931289}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1139710069}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: Mundo2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &285931289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,9 +664,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1139710069}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Fase
+        m_MethodName: Mundo4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1741,6 +1753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1139710068}
+  - component: {fileID: 1139710069}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1763,6 +1776,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1139710069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139710066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee4a5190eca800468f5fa849975315c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Menu
 --- !u!1 &1271809855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,9 +2365,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1139710069}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Fase
+        m_MethodName: Mundo1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2514,10 +2539,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 597019953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -30, y: 380}
-  m_SizeDelta: {x: 312.9418, y: 50}
+  m_AnchorMin: {x: 0.33200002, y: 0.86819607}
+  m_AnchorMax: {x: 0.8085413, y: 0.960804}
+  m_AnchoredPosition: {x: -107.5, y: 2.5}
+  m_SizeDelta: {x: -212.0582, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2060318623
 MonoBehaviour:
@@ -2701,9 +2726,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1139710069}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Fase
+        m_MethodName: Mundo3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
